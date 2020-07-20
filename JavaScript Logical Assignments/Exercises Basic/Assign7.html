@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Assignment 7</title>
+</head>
+<body>
+    <h2>Check your day</h2>
+    <button type="button" onclick="function1()">Check your day</button>
+    <script>
+        
+        function function1() {
+            document.write("<h1 style='font-size: 30%'>" + random() + "</h1>");
+        }
+        function random() {
+            if (Math.random() < 0.5) {
+                return ("Have a GOOD day!");
+            } else {
+                return ("Have a BAD day!");
+            }
+        }
+
+    </script>
+</body>

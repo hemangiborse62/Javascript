@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>functional programming</h2>
+
+<p>f1(<span id="id1"></span>):  <span id="demo"></span></p>
+<p>f2(<span id="id2"></span>):  <span id="demo1"></span></p>
+<script>
+var n=2;
+document.getElementById("id1").innerHTML = n;
+document.getElementById("id2").innerHTML = n;
+const double = (num1) =>
+{
+return num1*2;
+}
+const square = (num2) =>
+{
+return num2*num2;
+}
+const composedValue1 = (square, double, number) =>{
+	return square(double(number));
+}
+const composedValue2 = (double, square, number) =>{
+	return double(square(number));
+}
+var f1 = composedValue1(square, double, n);
+document.getElementById("demo").innerHTML = f1;
+var f2 = composedValue2(double, square, n);
+document.getElementById("demo1").innerHTML = f2;
+</script>
+
+</body>
+</html> 

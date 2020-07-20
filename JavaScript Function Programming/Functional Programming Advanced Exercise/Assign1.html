@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Functional programming</h2>
+<p>Output: <span id="demo"></span></p>
+
+<script>
+const isEven = (array) =>{
+var i=0;
+while(i<array.length)
+{
+	if(array[i]%2 == 0)
+    {
+    	return array.slice(i, i+1);
+        break;
+    }
+    i++;
+}
+}
+const find = (array, isEven) =>{
+document.getElementById("demo").innerHTML = isEven(array);
+}
+find([1, 3, 8, 4, 2], isEven);
+</script>
+
+</body>
+</html>

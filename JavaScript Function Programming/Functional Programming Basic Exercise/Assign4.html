@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Functional Programming</h2>
+<p>Square:[ <span id="demo1"></span> ]</p>
+<p>SquareRoot:[ <span id="demo2"></span> ]</p>
+
+<script>
+var a = [], b = [];
+const square = (num2) =>
+{
+return num2*num2;
+}
+const sqrt = (num1) =>
+{
+	var sqr, temp;
+	sqr = num1 / 2;
+	temp = 0;
+	while(sqr != temp)
+	{
+		temp = sqr;
+    	sqr = ( num1/temp + temp) / 2;
+	}
+	return sqr;
+}
+const map1 = (array, square) =>{
+for(var i=0 ; i< array.length ; i++)
+{
+	a += square(array[i])+" ";
+}
+}
+const map2 = (array2, sqrt) =>{
+for(var i=0 ; i< array2.length ; i++)
+{
+	b += sqrt(array2[i])+" ";
+}
+}
+map1([1, 2, 3, 4, 5], square);
+map2([1, 4, 9, 16, 25], Math.sqrt);
+document.getElementById("demo1").innerHTML = a;
+document.getElementById("demo2").innerHTML = b;
+</script>
+
+</body>
+</html>

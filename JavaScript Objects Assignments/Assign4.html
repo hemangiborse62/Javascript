@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Javascript Objects</h2>
+<p>Before changing: <span id="demo1"></span></p>
+<p>After changing: <span id="demo2"></span></p>
+<script>
+var obj = {
+  firstName : "Hemangi",
+  lastName  : "Borse"
+};
+document.getElementById("demo1").innerHTML = obj.firstName + " " + obj.lastName;
+obj.lastName = "Patil";
+document.getElementById("demo2").innerHTML = obj.firstName + " " + obj.lastName;
+</script>
+</body>
+</html>

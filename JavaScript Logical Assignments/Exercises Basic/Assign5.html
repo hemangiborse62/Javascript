@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>		
+<head>
+<title>Assignment 5</title>
+</head>
+<body>
+<h2>Concatenated string</h2>
+<p>Enter the Numbers:</p><input id="numb1" type="number"><br>
+<p>Enter the short string:</p><input id="numb2"><br><br>
+<button onclick="myFunction()">Result</button><br>
+<p>Output:  <span id="demo"></span></p>
+<script>
+function myFunction() {
+  var x, y, i, text="";
+  x = document.getElementById("numb1").value;
+  y = document.getElementById("numb2").value;
+    for (i = 0; i < x; i++) {
+  text += y;
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

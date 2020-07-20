@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>Assignment 3</title>
+<head>
+   
+</head>
+<body>
+    <h2> Number of Heads</h2>
+    Enter no. Of Flips: <input type="number" id="num"><br><br>
+    <button onclick="function1()" >Calculate</button><br>
+    <p>Output:   <span id="output"></span></p>
+    <script>
+       
+        function function1() {
+        	var num = document.getElementById('num').value;
+            var numOfHeads = 0;
+            for (var i = 0; i < num; i++) {
+                if (flipCoin() == "Heads") {
+                    numOfHeads++;
+                }
+            }
+            document.getElementById("output").innerHTML = numOfHeads ;
+        }
+         function flipCoin() {
+            if (Math.random() < 0.5) {
+                return ("Heads");
+            } else {
+                return ("Tails");
+            }
+        }
+        
+    </script>
+</body>
+</html>

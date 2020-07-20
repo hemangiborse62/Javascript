@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 2</title>
+</head>
+
+<body>
+    <h1> Array with 100 random numbers</h1>
+    <button type="button" onclick="Function1()"> Generate random</button>
+    <p> Output:[ <Span id="output" ></Span> ]</p>
+    <script>
+        function Function1() {
+            var Nums = new Array(100);
+            for (var i = 0; i < Nums.length; i++) {
+                Nums[i] = Math.random( );
+            }
+            document.getElementById("output").innerHTML = Nums;
+        }
+    </script>
+</body>
+
+</html>

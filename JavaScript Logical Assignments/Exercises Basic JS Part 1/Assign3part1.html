@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Assignment 3</title>
+</head>
+
+<body>
+    <h2>Array of the corresponding numbers</h2>
+    <button type="button" onclick="arrayFun()"> Generate </button>
+    <p> Output:[ <Span id="output" ></Span> ]</p>
+    <script>
+        function arrayFun() {
+            var strings = ["1.2", "2.3", "3.4"];
+            var nums = numberArray(strings);
+            document.getElementById("output").innerHTML = nums;
+        }
+        function numberArray(stringArray) {
+            var nums = new Array(stringArray.length);
+            for (var i = 0; i < stringArray.length; i++) {
+                nums[i] = parseFloat(stringArray[i]);
+            }
+            return (nums);
+        }
+    </script>
+</body>
+
+</html>

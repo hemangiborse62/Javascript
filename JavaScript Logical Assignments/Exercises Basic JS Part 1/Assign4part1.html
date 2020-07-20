@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Assignment 4</title>
+</head>
+<body>
+<h2> String without a & b</h2>
+Enter String: <input type="text" id="string"><br><br>
+<button onclick="myFunction()">Result</button>
+<p>Output: <span id="demo"></span></p>
+
+<script>
+function myFunction() {
+  var str1="";
+  var i;
+  var str = document.getElementById('string').value;
+  var n = str.length;
+  
+  for(i=0; i<n; i++)
+  {
+  if(str[i]!=="a" && str[i]!=="b")
+  {
+  str1 +=str[i];
+  }
+  }
+  document.getElementById("demo").innerHTML = str1;
+}
+</script>
+
+</body>
+</html>

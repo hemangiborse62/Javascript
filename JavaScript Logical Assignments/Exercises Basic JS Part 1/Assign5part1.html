@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Assignment 5</title>
+</head>
+
+<body>
+    <h1> Sum of words without q</h1>
+    <button type="button" onclick="Function()"> Sumofwords </button>
+    <p> Output: <Span id="output"></Span> </p>
+    <script>
+        function Function() {
+            var string = lengthOfNonQWords(["queen", "King" , "Wait"]);
+
+            function stringLength(s) {
+                return (s.length);
+            }
+
+            function lacksQ(s) {
+                return (s.indexOf("q") == -1);
+            }
+
+            function add(n1, n2) {
+                return (n1 + n2);
+            }
+
+            function lengthOfNonQWords(words) {
+                console.log(words);
+                document.getElementById("output").innerHTML = words.filter(lacksQ).map(stringLength).reduce(add, 0);
+            }
+        }
+    </script>
+</body>
+
+</html>

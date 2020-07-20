@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 2.</title>
+    <script>
+        function largest()
+        {
+            var n1 = Number(document.getElementById("first").value);
+            var n2 = Number(document.getElementById("second").value);
+            var n3 = Number(document.getElementById("third").value);
+    
+            if(n1>n2 && n1>n3)
+            {
+                window.alert(n1+" is greatest number");
+            }
+            else if(n2>n1 && n2>n3)
+            {
+                window.alert(n2+" is greatst number");
+            }
+            else if(n3>n1 && n3>n1)
+            {
+                window.alert(n3+" is greatest number");
+            }
+        }
+    </script>
+    
+</head>
+
+<body>
+    <h1>Calculate largest among three numbers</h1>
+		<br>
+		Enter number 1: <input type="text" id="first"></input><br>
+		Enter number 2: <input type="text" id="second"></input><br>
+		Enter number 3: <input type="text" id="third"></input><br>
+		
+		<button onclick="largest()">Check</button>
+	
+</body>
+
+</html>

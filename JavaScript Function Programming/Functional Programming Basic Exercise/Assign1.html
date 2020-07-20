@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>functional programming</h2>
+<p>Output:  <span id="demo"></span></p>
+<script>
+
+const double = (num1) =>
+{
+return num1*2;
+}
+const square = (num2) =>
+{
+return num2*num2;
+}
+const composedValue = (square, double, number) =>{
+	document.getElementById("demo").innerHTML = square(double(number));
+}
+composedValue(square, double, 5);
+</script>
+</body>
+</html> 
